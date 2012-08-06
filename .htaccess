@@ -1,0 +1,7 @@
+#Start write engine
+RewriteEngine on
+
+#page 404 Page not found
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^(.+)$ 404.php
