@@ -27,13 +27,13 @@ global $dbh;
 }
 
 function customcontent($pageinfo) {
-    $content =  $pageinfo.".tpl";
+    $content =  $pageinfo.".phtml";
     $file = themepath().$content;
     return $file;
 }
 
 function site($inports) {
-    $script =  $inports.".tpl";
+    $script =  $inports.".phtml";
     $inport = themepath().$script;
     return $inport;
 }
